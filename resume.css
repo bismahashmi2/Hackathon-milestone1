@@ -1,80 +1,141 @@
 body {
-    background-color:rgb(28, 116, 87);
-}
-.styling{ 
-    border: 28px solid yellow;
-    margin: 100px;
- } 
-.profile_name {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size:xx-large;
-    color :brown;
-    background-color: aliceblue;
-    padding-left: 6px;
-    margin-right: 560px; 
-}
-.description {
-    margin-right: 60px;
-}
-h2 {
-    font-size:x-large;
-    color:white;
-    margin-left: 35px;
-    /* padding-left: 10px; */
-}
-.columns {
-    float: left;
-    width: 65%;
-}
-h3 {
-    margin-left: 35px;
-    font-size: larger ;
-    color:antiquewhite;
+    background-color: #faf7f2;
+    margin:0;
+    padding: 0;
     font-family:'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif
 }
-#head {
-    color:white;
-    font-weight: bold;
-    font-family:'Lucida Sans', Geneva, sans-serif;
-    margin-left: 5px;
-}
-li , p {
-    font-size: larger ;
-    /* padding-left: 10px; */
-    margin-left: 35px;
-    color:rgb(239, 239, 178);
-    font-family:'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif
-}
-.description{
-    margin-left: 2px;
-}
-img {
-    padding-left: 50px;
-    padding-top: 20px;
-}
-.profile {
-    display: flex;
-    gap: 3rem;
-}
-.profile_container {
-    flex-direction: column;
-}
-a {
-    font-size:larger;
-    /* padding-left: 10px; */
-    margin-left: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:rgb(211, 227, 227);  
+header {
+    background-color: #e3dccc;
+    padding: 2rem;
 }
 
-#foot{
-    text-align: center;
-    color: aliceblue;
-    gap: 3px;
-    border: 1px solid white;
-    border-color: black;
-    background: #000;
-}
-.div{
+#profile{
     display: flex;
+    align-items: center;
+    gap: 2rem;
 }
+
+#profile_name {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color :#745131;
+}
+
+h2, strong {
+    color:#000000;
+}
+
+#designation {
+  color:#755134;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+.left-column, .right-column {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+li , p {
+    font-size: 1.1rem;
+    color: #755134;
+    margin-bottom: 0.5rem;
+}
+.progress-bar {
+    background-color:#e3dccc;
+    border-radius: 10px;
+    height: 10px;
+    width: 70%;
+}
+.progress {
+    background-color: #755134;
+    height: 100%;
+    border-radius: 10px;
+}
+
+li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+#description{
+    margin-left: 2px;
+    color: #755134;
+}
+#skills-details{
+    display: none;
+}
+button {
+    border: none;
+    background-color: #faf7f2;
+    cursor: pointer;
+}
+
+span{
+    color: #755134;
+}
+#skills-arrow{
+    transition: transform 0.3s ease;
+}
+footer{
+    text-align: center;
+    padding: 0.5rem;
+    color:#745131;
+    background:#e3dccc;
+    margin-top: 2rem;
+}
+
+/* For mobile */
+@media (max-width: 426px) {
+    main {
+        display: block;
+    }
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+    #profile {
+        display: block ;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        max-width: 150px;
+    }
+    footer {
+        font-size: 0.6rem; 
+    }
+}
+
+/* For Tablet */
+@media (min-width: 426px) and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; 
+        gap: 1.5rem; 
+    }
+
+    #profile {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    img {
+        max-width: 200px; 
+    }
+
+    h1, h2 {
+        font-size: 1.5rem; 
+    }
+
+    .left-column, .right-column {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        padding: 0.8rem; 
+    }
+    footer {
+        font-size: 0.8rem; 
+    }
+}
+
+

@@ -7,81 +7,111 @@
     <title> Static Resume</title>
     <link rel="stylesheet" href="resume.css">
 </head>
-<div class="styling">
 
     <body>
-        <section>
-            <div class="container">
-                <div class="profile">
-                    <div class="profile_container">
-                        <img src="./profile.png" alt="Hashmi Hashmi" width="140" height="auto">
-                    </div>
+        <header>
+                <div id="profile">
+                        <img src="./profile.png" alt="Hashmi Hashmi" width="300">
                     <div>
-                        <h1 class="profile_name"><b>BISMA</b></h1>
-                        <h1 class="profile_name"><b>HASHMI</b></h1>
-                        <p id="head"><b><u>Junior Web Developer</u></b></p>
-                        <p class="description">Gaining experience in the field of web developing. Persuing career in
-                            Generative
-                            AI.</p>
+                        <h1 id="profile_name"><b>HASHMI HASHMI</b></h1>
+                        <h2 id="designation"><u>Student</u></h2>
+                        <p id="description">Gaining experience in the field of web developing. Persuing career in
+                         Agentic AI.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="rows">
-                <div class="columns">
-                    <h2><b>Personal Information</b></h2>
-                    <p>
-                        <b>NAME :</b> Hashmi Hashmi <br>
-                        <b>CONTACT :</b> 03331030311 <br>
-                        <b>ADDRESS :</b> Gulshan-e-Iqbal
-                    </p>
-                </div>
-    
-                <div class="columns">
-                    <h2><b>Education</b></h2>
-                    <h3><b><u>School</u></b></h3>
-                    <p>Chiniot Islamia Public School</p>
-                    <h3><b><u>College</u></b></h3>
-                    <p>Govt Degree College Shaikh Zaid Center</p>
-                    <h3><b><u>Others</u></h3>
-                    <p>Persuing Cloud Computing Generative AI <br>Engineering from Governor Sindh's AI Initiative</b></p>
-                </div>
-            </div>
-        </section>
+                </div>  
+            </header>
        
+        <main>    
+        <section class="left-column">
+                <div>
+                    <h2>Contact</h2>
+                        <p>
+                        <strong>Phone :</strong> 03331030311</span> <br>
+                        <strong>Address :</strong> Gulshan-e-Iqbal, Karachi <br>
+                        <strong>Linkedin :</strong><a href="https://www.linkedin.com/in/hashmi-hashmi-69b50b2b6" target="_blank"> linkedin.com/in/hashmi-hashmi</a><br>
+                        <strong>Gmail :</strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=119hashmihashmi@gmail.com" target="_blank">119hashmihashmi@gmail.com</a>
+                        </p>
+                </div>
+                
+                    <h2 onclick="toggleSection('skills-details')">Skills
+                   <button>
+                    <span id="skills-arrow" style="display: inline-block; transform: rotate(0deg);">&#9660</span>
+                </button> </h2>
+                    <div id="skills-details">
+                        <ul>
+                        <li>
+                            <div>HTML</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 65%;"></div>
+                            </div>
+                        </li>
 
-        <h2><b>Work Experience</b></h2>
-        <li>Student</li>
-        <li>Looking for an oppurtunity to enhace my talents</li>
-        
+                        <li>
+                            <div>CSS</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%;"></div>
+                            </div>
+                       </li>
 
-        <h2><b>Skills</b></h2>
-        <div id="myDiv">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Typescript</li>
-            <li>C++</li>
-            <li>Fluent English Communication</li>
-        </div>
-        
-        <h2><b>Achievements</b></h2>
-        <li>Member of Proctorial Board of College</li>
-        <li>Position holder in Academics</li>
-        <li>Winner of Colgate Bright Smile Competition</li>
-        
-        
+                        <li>
+                            <div>Typescript</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 45%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>C++</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 30%"></div>
+                            </div>
+                    </li>
+                    </ul>
+                    </div>
 
-        <section>
-            <h2>Reference</h2>
-            <b><a href="https://www.linkedin.com/in/hashmi-hashmi-69b50b2b6" target="main">  # For more info visit my Linkedin Id</a> <br>
-                <a href="https://119hashmihashmi@gmail.com" target="main2">@ Click here to contact on gmail</a> </b>
-        </section>
+                    <div>
+                        <h2>Languages</h2>
+                        <ul>
+                        <li>Urdu</li>
+                        <li>English</li>
+                    </ul>
+                    </div>
+                </section>
 
+                <section class="right-column">
+                <div>
+                    <h2>Education</h2>
+                    <ul>
+                    <li>
+                    <strong><u>School</u>: </strong> Chiniot Islamia Public School</li>
+                   <li> 
+                    <strong><u>College</u>: </strong>
+                    Govt Degree College Shaikh Zaid Center</li>
+                    <li>
+                    <strong><u>Others</u>: </strong>
+                    <span id="description">Persuing Cloud Computing Generative AI Engineering from Governor Sindh's AI Initiative</span>
+                </li>
+                </ul>
+                </div>
+            
+               <h2>Work Experience</h2>
+               <ul>
+               <li>Looking for an oppurtunity to enhace my talents</li>
+              </ul>
+
+              <h2>Achievements</h2>
+              <ul>
+              <li>Member of Proctorial Board of College</li>
+              <li>Position holder in Academics</li>
+              <li>Winner of Colgate Bright Smile Competition</li>
+          </ul>
+          <h2>Reference</h2>
+          <p>Available upon request</p>
+        </section> 
+    </main>
        
-        <footer id="foot">@All rights reserved</footer>
-</div>
+        <footer>&copy; All rights reserved</footer>
+
+<script src="script.js" defer></script>
 </body>
 
 </html>
