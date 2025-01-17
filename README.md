@@ -1,1 +1,1 @@
-This is my first hackathon. 
+Static Resume created by using HTML, CSS and Typescript 
