@@ -1,5 +1,5 @@
-function toggleSection(h2Id:string) {
-    const h2 = document.getElementById(h2Id);
+function toggleSection() {
+    const h2 = document.getElementById('skills-details');
     const arrow = document.getElementById ('skills-arrow')
     if (h2 && arrow) {
         const isHidden = h2.style.display === "none";
